@@ -1,4 +1,3 @@
-
 def doubleAddOne(x):
     print(2 * x + 1)
 
