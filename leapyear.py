@@ -1,6 +1,10 @@
-num = int(input("Number Now! "))
 
-if num % 4 == 0 or (num % 400 == 0 and num % 100 != 0):
-    print("true yeapyear")
-else:
-    print("false yeapyear")
+year = int(input("year? "))
+
+if year % 4 == 0:
+    if year % 100 == 0 and year % 400 != 0:
+        print(f"{year} is not a leap year!")
+    else: 
+        print(f"{year} is a leap year!")
+    
+
