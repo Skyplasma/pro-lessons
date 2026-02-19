@@ -16,13 +16,12 @@ log_lines = [
 ]
 
 def stringsplitter(x):
+    z = []
     for i in x:
         if type(i) == str:
-            z = i.split("|")
-            x.remove(i)
-            x.append(z)
+            z.append(i.split("|"))
+    return z
 
 
-stringsplitter(log_lines)
 
-print(log_lines)
+print(stringsplitter(log_lines))
