@@ -1,0 +1,37 @@
+TEXT PROCESSING TASK
+====================
+
+You are given a short block of unstructured text representing user-entered notes.
+The text contains inconsistent spacing, mixed capitalisation, and punctuation.
+
+RAW TEXT (copy directly into your script):
+------------------------------------------
+raw_text = (
+    "  Python   is   powerful, flexible, and easy to learn.\n"
+    "Many   beginners    enjoy  Python because it reads well.\n"
+    "PYTHON  code   is often used  for scripting, data work, and teaching.   "
+)
+
+IMPORTANT INSTRUCTIONS:
+-----------------------
+- You must NOT read from or write to files.
+- Copy the variable above directly into your Python script.
+- File input and output are not required and must not be used.
+
+TASK CONTEXT:
+-------------
+Your goal is to process this text in multiple clear steps using functions.
+
+The overall task includes:
+- cleaning the text (for example: trimming whitespace, normalising spacing or case)
+- transforming the text (for example: splitting into words or sentences)
+- producing a simple analysis or summary (for example: counts, unique words, or formatted output)
+
+You must decompose this work into small, reusable functions.
+Each function should have a single, clear responsibility.
+
+ASSUMPTIONS:
+------------
+- The text is provided as a single string variable.
+- You may choose the exact form of the final output.
+- The focus is on structure and clarity, not handling every possible edge case.

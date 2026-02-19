@@ -1,0 +1,40 @@
+NUMERIC DATA SAMPLE
+===================
+
+Each value below represents a single integer.
+
+DATA (copy directly into your script):
+--------------------------------------
+numbers = [
+    12, 7, 19, 4, 25,
+    8, 16, 3, 42, 9,
+    14, 6, 21, 5, 18,
+    27, 11, 30, 2, 17,
+    23, 10, 35, 1
+]
+
+IMPORTANT INSTRUCTIONS:
+-----------------------
+- You must NOT read from or write to files.
+- Copy the list above directly into your Python script.
+- File input and output are not required and must not be used.
+
+TASK CONTEXT:
+-------------
+You will perform the same processing task on this data three times:
+1. Using a for loop
+2. Using a list comprehension
+3. Using a generator
+
+Your processing task should involve:
+- reading each value
+- applying a simple transformation or check
+- producing a final result such as a total, count, filtered sequence, or average
+
+ASSUMPTIONS:
+------------
+- The data is already available in memory as a variable.
+- No file input/output is permitted.
+- The same logic must be implemented in all three approaches.
+- The goal is to compare readability, evaluation behaviour, and memory use,
+  not to optimise performance.

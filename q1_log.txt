@@ -1,0 +1,44 @@
+SYSTEM LOG SAMPLE
+=================
+
+Each entry below represents a simple system message recorded during program execution.
+
+FORMAT (per entry):
+"<timestamp> | <level> | <component> | <message>"
+
+LOG DATA (copy directly into your script):
+-----------------------------------------
+log_lines = [
+    "2025-05-12 10:14:03 | INFO | auth | User login successful",
+    "2025-05-12 10:14:08 | WARN | auth | Invalid password attempt",
+    "2025-05-12 10:15:21 | INFO | database | Connection established",
+    "2025-05-12 10:16:02 | ERROR | database | Query failed",
+    "2025-05-12 10:16:45 | INFO | auth | User logout",
+    "2025-05-12 10:17:10 | WARN | network | Packet loss detected",
+    "2025-05-12 10:17:55 | INFO | network | Connection stabilised",
+    "2025-05-12 10:18:30 | ERROR | auth | Account locked",
+    "2025-05-12 10:19:12 | INFO | database | Connection closed",
+    "2025-05-12 10:20:01 | INFO | auth | User login successful",
+    "2025-05-12 10:20:44 | WARN | database | Slow query detected",
+    "2025-05-12 10:21:30 | INFO | network | New connection established",
+    "2025-05-12 10:22:05 | ERROR | network | Connection timeout",
+    "2025-05-12 10:22:48 | INFO | auth | Password reset completed"
+]
+
+IMPORTANT INSTRUCTIONS:
+-----------------------
+- You must NOT read from or write to files.
+- Copy the list above directly into your Python script.
+- File input and output are not required and must not be used.
+
+TASK CONTEXT:
+-------------
+You will analyse this same data twice using different primary data structures.
+
+Your analysis should include tasks such as:
+- grouping messages
+- counting occurrences
+- identifying unique values
+- summarising activity by component or level
+
+The exact outputs are up to you, provided both solutions perform the same analysis.
