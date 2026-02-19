@@ -15,6 +15,7 @@ log_lines = [
     "2025-05-12 10:22:48 | INFO | auth | Password reset completed"
 ]
 
+
 def stringsplitter(x):
     z = []
     for i in x:
@@ -27,9 +28,13 @@ def clean_data(full_list):
             full_list [outer_nest][inner_nest] = full_list [outer_nest][inner_nest].strip()
     return full_list
 
-
+def msg_type(full_list):
+    data_select = 1
+    for outer_nest in range(len(full_list)):
+        print(full_list[outer_nest][data_select])
 
 print(stringsplitter(log_lines))
 nested_log = stringsplitter(log_lines)
 
-print(clean_data(nested_log))
+secondary_list = clean_data(nested_log)
+print(msg_type(secondary_list))
