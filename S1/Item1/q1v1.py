@@ -18,10 +18,18 @@ log_lines = [
 def stringsplitter(x):
     z = []
     for i in x:
-        if type(i) == str:
-            z.append(i.split("|"))
+        z.append(i.split("|"))
     return z
+
+def clean_data(full_list):
+    for outer_nest in range(len(full_list)):
+        for inner_nest in range(len(full_list [outer_nest])):
+            full_list [outer_nest][inner_nest] = full_list [outer_nest][inner_nest].strip()
+    return full_list
 
 
 
 print(stringsplitter(log_lines))
+nested_log = stringsplitter(log_lines)
+
+print(clean_data(nested_log))
