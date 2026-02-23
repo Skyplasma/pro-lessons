@@ -29,14 +29,12 @@ def clean_data(full_list):
     return full_list
 
 def msg_type(full_list,data_select):
-    z = []
     for outer_nest in range(len(full_list)):
-        z.append(full_list[outer_nest][data_select])
-    return sorted(z)
+        print(sorted(full_list[outer_nest]))
 
-
-print(stringsplitter(log_lines))
 nested_log = stringsplitter(log_lines)
 
 secondary_list = clean_data(nested_log)
-print(msg_type(secondary_list,1))
+##print(msg_type(secondary_list,1))
+
+print(list(filter(secondary_list,"INFO")))
