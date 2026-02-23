@@ -6,19 +6,20 @@ numbers = [
     23, 10, 35, 1
 ]
 
-print(sorted(numbers))
+
 
 def total(Num_list):
-    print("lol")
-
-
-def average(Num_list):
     running_total = 0
-    ave = 0
     for current_value in Num_list:
         running_total += current_value 
-    ave = running_total / len(Num_list)
+    return running_total
+
+def average(total):
+    ave = 0 
+    ave = total / len(numbers)
     return ave
 
 
-average(numbers)
+print(f"the average value of all numbers is {average(total(numbers))}.")
+print(f"the sorted list is {sorted(numbers)}")
+print(len(numbers))
