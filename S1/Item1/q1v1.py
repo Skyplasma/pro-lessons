@@ -28,13 +28,15 @@ def clean_data(full_list):
             full_list [outer_nest][inner_nest] = full_list [outer_nest][inner_nest].strip()
     return full_list
 
-def msg_type(full_list):
-    data_select = 1
+def msg_type(full_list,data_select):
+    z = []
     for outer_nest in range(len(full_list)):
-        print(full_list[outer_nest][data_select])
+        z.append(full_list[outer_nest][data_select])
+    return sorted(z)
+
 
 print(stringsplitter(log_lines))
 nested_log = stringsplitter(log_lines)
 
 secondary_list = clean_data(nested_log)
-print(msg_type(secondary_list))
+print(msg_type(secondary_list,1))
