@@ -9,11 +9,16 @@ numbers = [
 print(sorted(numbers))
 
 def total(Num_list):
-
+    print("lol")
 
 
 def average(Num_list):
+    running_total = 0
+    ave = 0
+    for current_value in Num_list:
+        running_total += current_value 
+    ave = running_total / len(Num_list)
+    return ave
 
 
-
-def
+average(numbers)
