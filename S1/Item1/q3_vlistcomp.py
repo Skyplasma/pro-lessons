@@ -6,3 +6,12 @@ numbers = [
     23, 10, 35, 1
 ]
 
+def even_squares_list(n):
+    return [i * i for i in n if i % 2 ==0]
+
+def sum_of_squares_gen(n):
+    return sum(i*i for i in n) # generator function apparently
+
+nums = even_squares_list(numbers)
+
+print(nums)

@@ -6,3 +6,9 @@ numbers = [
     23, 10, 35, 1
 ]
 
+def only_evens(Num_list):
+    for number in Num_list:
+        if number % 2 == 0:
+            yield number
+
+print(only_evens(numbers))
