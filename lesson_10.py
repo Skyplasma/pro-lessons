@@ -1,8 +1,8 @@
 import sys
 
 num1 = int(input("num1? "))
-dividend = int(input("dividend? "))
-divisor = int(input("divisor? "))
+dividend = input("dividend? ")
+divisor = input("divisor? ")
 
 #if divisor == 0:
 #    print("Undefind")
@@ -15,9 +15,19 @@ else:
 
 
 try:
+    dividend = int(dividend)
+    divisor = int(divisor)
     floor_quotient = dividend // divisor
-except ZeroDivisionError:
+except ZeroDivisionError as i:
     print("ohno. zero div error...")
+    print(i)
     exit(7)
+except ValueError:
+    print("im pretty sure thats not a number...")
+    exit(7)
+else:
+    print("ITS ALIVE!")
+finally:
+    print("this happens at the the end no matter what...")
 
 print(f"answer rounded down {floor_quotient}")
