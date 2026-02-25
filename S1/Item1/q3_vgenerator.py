@@ -11,4 +11,7 @@ def only_evens(Num_list):
         if number % 2 == 0:
             yield number
 
-print(only_evens(numbers))
+x = only_evens(numbers) #cannot be called directly as is a machine not a value
+
+for i in x:
+    print(i)
