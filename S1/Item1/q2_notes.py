@@ -3,6 +3,9 @@ raw_text = (
     "Many   beginners    enjoy  Python because it reads well.\n"
     "PYTHON  code   is often used  for scripting, data work, and teaching.   "
 )
-
-print(raw_text.lower())
-print(raw_text.strip())
+newlinetext = raw_text.split("/n")
+split_text = raw_text.split()
+print(newlinetext)
+normal_text = " ".join(split_text)
+done_text = normal_text.capitalize()
+print(done_text)
