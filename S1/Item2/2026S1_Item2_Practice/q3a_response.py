@@ -27,4 +27,16 @@
 """
 
 #!/usr/bin/python3
+import random
+temp = []
+temp = input("Enterseed, songcount: ").split(",")
+try:
+    for i in range(len(temp)):
+        temp[i] = int(temp[i])
+except:
+    raise ValueError("mean")
 
+random.seed(temp[0])
+ran = random.randint(0,temp[1])
+
+print(ran)

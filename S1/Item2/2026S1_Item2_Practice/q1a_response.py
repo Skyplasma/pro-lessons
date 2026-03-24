@@ -32,18 +32,14 @@ anything = input("Give me a year")
 liststr = anything.split()
 
 
-for i in range(len(liststr)):
-    try:
+
+try:
+    for i in range(len(liststr)):
         liststr[i] = int(liststr[i])
-    except ValueError:
-        raise ValueError("not an int")
+    if liststr[1] in range(2020, 2027) and liststr[2] in range(1,5):
+        print("yes")
+    else:
+        print("bad")
+except ValueError:
+    raise ValueError("not an int")
 
-
-
-if liststr[1] in range(2020, 2026) and liststr[2] <= 4:
-    print("yes")
-else:
-    print("bad")
-
-
-ab(check_int(badecreate(anything)))
