@@ -40,8 +40,10 @@ for i in range(len(liststr)):
 
 
 
-if liststr[1] in range(2020, 2026) and liststr[2] in range(:
+if liststr[1] in range(2020, 2026) and liststr[2] <= 4:
     print("yes")
+else:
+    print("bad")
 
 
 ab(check_int(badecreate(anything)))
