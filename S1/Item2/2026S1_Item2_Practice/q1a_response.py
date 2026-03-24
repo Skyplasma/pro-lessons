@@ -29,22 +29,19 @@
 #!/usr/bin/python3
 
 anything = input("Give me a year")
-def badecreate(x):
-    return x.split(" ")
-
-def check_int(x):
-    z = []
-    for i in range(len(x)):
-        try:
-             z.append(int(x[i]))
-        except ValueError:
-            raise ValueError("not an int")
-    return z
+liststr = anything.split()
 
 
-def ab(y):
-    if y[1] in range(2020, 2026):
-        print("yes")
+for i in range(len(liststr)):
+    try:
+        liststr[i] = int(liststr[i])
+    except ValueError:
+        raise ValueError("not an int")
+
+
+
+if liststr[1] in range(2020, 2026) and liststr[2] in range(:
+    print("yes")
 
 
 ab(check_int(badecreate(anything)))
