@@ -1,6 +1,6 @@
 #
-#def hypotenuse(n1,n2):
-#    return pow((n1**2 + n2 * n2),0.5)
+def hypotenuse(n1,n2):
+    return pow((n1**2 + n2 * n2),0.5)
 #
 #print(hypotenuse(3,4))
 
