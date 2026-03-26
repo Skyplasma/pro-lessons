@@ -28,3 +28,5 @@
 
 #!/usr/bin/python3
 
+with open(raw_cards.csv,r) as f:
+    f.lines
