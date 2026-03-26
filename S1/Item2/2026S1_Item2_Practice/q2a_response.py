@@ -28,5 +28,19 @@
 
 #!/usr/bin/python3
 
-with open(raw_cards.csv,r) as f:
-    f.lines
+with open("S1/Item2/2026S1_Item2_Practice/raw_cards.csv",mode="r") as f:
+    z = f.readlines()
+    x = []
+    for i in z:
+        i = i.strip('\n')
+        if len(i.split(',')) == 2:
+
+            x.append(i.split(','))
+    for i in range(len(x)):
+        for a in range(len(x[i])):
+            x[i][a] = x[i][a].strip()
+    print(x)
+
+with open("S1/Item2/2026S1_Item2_Practice/cards_cleaned.csv",mode="w") as w:
+    for i in x:
+        w.write(f"{i[0]}|{i[1]}\n")
