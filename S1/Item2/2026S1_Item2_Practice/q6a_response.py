@@ -28,3 +28,16 @@
 
 #!/usr/bin/python3
 
+Token = input("gimme dat token  ")
+upperc = "ABCDEFGHIJKLMNOPQRXTUVWXYZ"
+num = "0123456789"
+listed = []
+for i in Token:
+    listed.append(i)
+print(len(listed))
+if len(listed) == 5:
+    print("Length Valid")
+    if listed[0] in upperc and listed[1] in upperc and listed[4] in upperc and listed[2] in num and listed[3] in num:
+        print("a")
+    else:
+        print("b")
