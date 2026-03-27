@@ -44,3 +44,4 @@ with open("S1/Item2/2026S1_Item2_Practice/raw_cards.csv",mode="r") as f:
 with open("S1/Item2/2026S1_Item2_Practice/cards_cleaned.csv",mode="w") as w:
     for i in x:
         w.write(f"{i[0]}|{i[1]}\n")
+    print(len(x))
